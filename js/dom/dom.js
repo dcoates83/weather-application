@@ -8,7 +8,7 @@ function changeCity(weatherData) {
 }
 function changeCityDesc(weatherData) {
   const cityDesc = document.querySelector(".weather-info-description");
-  cityDesc.textContent = "- " + weatherData.weather[0].description + " -";
+  cityDesc.textContent =  weatherData.weather[0].description;
   return cityDesc;
 }
 

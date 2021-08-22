@@ -9,10 +9,10 @@
   width: 25vw;
   position: relative;
   top: 5vh;
-  fill: #fff;
   -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(308deg) brightness(106%) contrast(102%);
           filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(308deg) brightness(106%) contrast(102%);
-  margin-bottom: 5em;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .show-me {
@@ -82,7 +82,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background: #0a1f44;
   color: #1e2432;
-  padding: 70px;
+  padding: 50px;
 }
 
 .error-msg {
@@ -116,6 +116,7 @@ button:hover {
 }
 
 .forecast-daily-container {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,6 +125,7 @@ button:hover {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-height: 30vh;
+  min-width: 70vw;
   padding: 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -134,6 +136,10 @@ button:hover {
   border-radius: 10px;
   -webkit-box-shadow: 7px 7px #53627c;
           box-shadow: 7px 7px #53627c;
+}
+
+.forecast-daily-container h2 {
+  color: #0a1f44;
 }
 
 .forecast-daily {
@@ -170,7 +176,6 @@ button:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-right: 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -201,23 +206,44 @@ button:hover {
 }
 
 .weather-info-icon {
-  margin: 2em;
+  margin-top: 1em;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-bottom: 5em;
+  width: 100%;
+  grid-auto-flow: column;
 }
 
 .weather-info-icon svg {
   height: 25vh;
-  width: 25vh;
+  width: 35vw;
 }
 
-.weather-info-temperature {
-  margin: 1em;
+@media (min-width: 430px) and (max-width: 899px) {
+  .weather-info-icon {
+    grid-auto-flow: row;
+    place-content: center;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 899px) {
+  .weather-info-icon {
+    grid-auto-flow: row;
+    place-content: center;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 650px) {
+  .weather-info-icon {
+    margin-bottom: 15em;
+  }
+}
+
+.weather-info-icon-text {
+  text-align: center;
 }
 
 .weather-info {
@@ -225,7 +251,7 @@ button:hover {
   padding-bottom: 3em;
   font-size: 3rem;
   height: 50vh;
-  min-width: 30vw;
+  min-width: 80vw;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,6 +298,12 @@ button:hover {
   text-align: center;
 }
 
+@media (min-width: 650px) {
+  .weather-info {
+    min-width: 40vw;
+  }
+}
+
 .weather-details-icon {
   padding: 0.75em;
   display: -webkit-box;
@@ -289,6 +321,7 @@ button:hover {
 
 .weather-info-temperature {
   color: #fff;
+  margin-top: 2em;
 }
 
 .weather-details-label {
@@ -299,7 +332,7 @@ button:hover {
   color: #fff;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 700px) {
   .weather-details-container {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -11,10 +11,13 @@
  width: 25vw;
 position: relative;
 top: 5vh;
-
- fill: #fff;
  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(308deg) brightness(106%) contrast(102%);
- margin-bottom: 5em;
+ justify-self: end;
+}
+@media (min-width:480px) and (max-width:650px) {
+ .bigIcon{
+
+ }
 }
 .show-me {
  display: none;
@@ -29,6 +32,7 @@ svg {
 .Clouds {
  background: url("../SVG/cloudy.svg");
  background-repeat: no-repeat;
+
 }
 
 .Humidity {
