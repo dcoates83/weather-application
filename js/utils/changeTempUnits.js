@@ -21,12 +21,12 @@ async function changeLastWeekTempC(lat,lon,key) {
 
   for (let i = 0; i < dates.length; i++) {
     let lastWeek = await fetch(
-      `https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${lat}&lon=${lon}&dt=${dates[i]}${key}&units=metric`,
+      `https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${lat}&lon=${lon}&dt=${dates[i]}&appid=${key}&units=metric`,
       { mode: "cors" }
     );
-    const nData = await lastWeek.json();
-    temps.push(nData.current.temp);
-    weather.push(nData.current.weather[0].main);
+    const data = await lastWeek.json();
+    temps.push(data.current.temp);
+    weather.push(data.current.weather[0].main);
   }
   high.forEach((i) => {
         i.textContent = temps.shift() + " °C";
