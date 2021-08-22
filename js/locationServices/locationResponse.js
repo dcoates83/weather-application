@@ -1,4 +1,4 @@
-import API_KEY from "../api/apikey.js";
+import API_KEY from "../apikey.js";
 import setLocation from "./setLocation.js";
 
 // set location if successful
