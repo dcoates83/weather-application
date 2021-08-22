@@ -7,10 +7,11 @@ const key = API_KEY;
 if (!value == "") {
   let city = value;
   let api = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}${key}`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`,
     { mode: "cors" }
   );
   let data = await api.json();
+  console.log(data);
   let location = data.cod;
   if (location == 404) {
     const error = document.querySelector(".error-msg");

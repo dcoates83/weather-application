@@ -13,7 +13,7 @@ async function deniedLocation(info) {
   const city = "Calgary";
   const key = API_KEY;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=`;
-  const response = await fetch(`${url}${city}${key}&units=metric`, {
+  const response = await fetch(`${url}${city}&appid=${key}&units=metric`, {
     mode: "cors",
   });
   const data = await response.json();
