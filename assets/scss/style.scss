@@ -1,0 +1,162 @@
+@import "svg";
+@import "config";
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+button:hover {
+  background: $darkred;
+}
+.btn {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 10px 20px;
+  margin: 15px;
+  border-radius: 5px;
+  background: $red;
+  transition: background 0.3s ease-in-out;
+  color: $light;
+}
+
+// Long Range Forecast
+.forecast-daily-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 30vh;
+  padding: 1em;
+  align-items: center;
+  text-align: center;
+  background-color: $light;
+  color: $text_med;
+  border-radius: 10px;
+  box-shadow: 7px 7px $text_med;
+}
+.forecast-daily {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+.forecast-daily-day {
+  margin: 0;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+.forecast-daily-temperature {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 1em;
+  color: $text_dark;
+}
+// ** Top Container for todays forcast
+.main-weather-container {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 1em;
+  align-items: center;
+  flex-direction: column;
+  height: 65vh;
+  color: $bg_main;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.forecast-temperature-high {
+  margin-bottom: 1em;
+}
+@media (min-width: 650px) {
+  .main-weather-container {
+    flex-direction: row;
+  }
+  .weather-info {
+    height: 70vh;
+  }
+}
+// ** Center Icon and temp
+.weather-info-icon {
+  margin: 2em;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  svg {
+    height: 25vh;
+    width: 25vh;
+  }
+}
+.weather-info-temperature{
+  margin: 1em;
+  // padding-left: 1em;
+}
+.weather-info {
+padding-top: 3em;
+padding-bottom: 3em;
+  font-size: 3rem;
+  height: 50vh;
+  min-width: 30vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: $light;
+  box-shadow: 5px 5px $text_med;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.25em;
+    color: #000;
+  }
+  h2 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+  .weather-info-date {
+    margin-top: 1em;
+  }
+  input {
+    border-bottom: 1px solid $text_med;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+  }
+}
+
+// **Only Seen On large screens/Creates a bonus sidebar
+.weather-details-icon {
+  padding: 0.75em;
+  display: flex;
+  justify-content: center;
+}
+.weather-details-container {
+  text-align: center;
+  display: none;
+}
+
+.weather-info-temperature {
+  color: $light;
+}
+.weather-details-label {
+  color: $light;
+}
+.weather-details-data {
+  color: $light;
+}
+@media (min-width: 1200px) {
+  .weather-details-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
