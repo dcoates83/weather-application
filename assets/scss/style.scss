@@ -38,7 +38,7 @@ button:hover {
   color: $text_med;
   border-radius: 10px;
   box-shadow: 7px 7px $text_med;
-  h2{
+  h2 {
     color: $bg_main;
   }
 }
@@ -84,13 +84,12 @@ button:hover {
   }
 }
 
-
 // ** Center Icon and temp
 .weather-info-icon {
   margin-top: 1em;
   display: grid;
   align-items: center;
-  margin-bottom: 5em;
+  // margin-bottom: 5em;
   width: 100%;
   grid-auto-flow: column;
 
@@ -99,39 +98,36 @@ button:hover {
     width: 35vw;
   }
 }
-@media (min-width:430px) and (max-width:899px) {
-  .weather-info-icon{
-    // margin-top: 1em;
+@media (min-width: 430px) and (max-width: 899px) {
+  .weather-info-icon {
+  
     grid-auto-flow: row;
     place-content: center;
-    // margin-bottom: 10em;
+ 
   }
-  
 }
-@media (min-width:430px) and (max-width:899px) {
-  .weather-info-icon{
-    // margin-top: 1em;
+@media (min-width: 430px) and (max-width: 899px) {
+  .weather-info-icon {
+
     grid-auto-flow: row;
     place-content: center;
-    // margin-bottom: 10em;
+
   }
-  
+
+
 }
-@media (min-width:430px) and (max-width:650px) {
-  .weather-info-icon{
-   
+@media (min-width: 430px) and (max-width: 650px) {
+  .weather-info-icon {
     margin-bottom: 15em;
   }
-  
 }
-.weather-info-icon-text{
+.weather-info-icon-text {
   text-align: center;
 }
 // Main Container for search and city details
 .weather-info {
- 
-padding-top: 3em;
-padding-bottom: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   font-size: 3rem;
   height: 50vh;
   min-width: 80vw;
@@ -168,10 +164,9 @@ padding-bottom: 3em;
     text-align: center;
   }
 }
-@media (min-width:650px) {
-  .weather-info{
+@media (min-width: 650px) {
+  .weather-info {
     min-width: 40vw;
-  
   }
 }
 
@@ -188,7 +183,11 @@ padding-bottom: 3em;
 
 .weather-info-temperature {
   color: $light;
-  margin-top: 2em;
+}
+@media (min-width:430px) {
+  .weather-info-temperature {
+    margin-top: 2em;
+  }
 }
 .weather-details-label {
   color: $light;

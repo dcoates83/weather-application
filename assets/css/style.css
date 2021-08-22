@@ -70,6 +70,11 @@ svg {
   background-repeat: no-repeat;
 }
 
+.Smoke {
+  background: url("../SVG/wind.svg");
+  background-repeat: no-repeat;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -212,7 +217,6 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5em;
   width: 100%;
   grid-auto-flow: column;
 }
@@ -321,7 +325,12 @@ button:hover {
 
 .weather-info-temperature {
   color: #fff;
-  margin-top: 2em;
+}
+
+@media (min-width: 430px) {
+  .weather-info-temperature {
+    margin-top: 2em;
+  }
 }
 
 .weather-details-label {
