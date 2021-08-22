@@ -8,7 +8,7 @@
   height: 25vh;
   width: 25vw;
   position: relative;
-  top: 5vh;
+  top: 7vh;
   -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(308deg) brightness(106%) contrast(102%);
           filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(308deg) brightness(106%) contrast(102%);
   -ms-grid-column-align: end;

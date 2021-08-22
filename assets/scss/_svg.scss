@@ -1,80 +1,77 @@
 // ** Link to files to display images
 // **Weekly Icon
 .icon {
- height: 3rem;
- width: 3rem;
- margin-right: 2px;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2px;
 }
 // **Daily Icon
 .bigIcon {
- height: 25vh;
- width: 25vw;
-position: relative;
-top: 5vh;
- filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(308deg) brightness(106%) contrast(102%);
- justify-self: end;
+  height: 25vh;
+  width: 25vw;
+  position: relative;
+  top: 7vh;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(308deg)
+    brightness(106%) contrast(102%);
+  justify-self: end;
 }
-@media (min-width:480px) and (max-width:650px) {
- .bigIcon{
-
- }
+@media (min-width: 480px) and (max-width: 650px) {
+  .bigIcon {
+  }
 }
 .show-me {
- display: none;
+  display: none;
 }
-
 
 svg {
- height: 3.125rem;
- width: 3.125rem;
-
+  height: 3.125rem;
+  width: 3.125rem;
 }
 .Clouds {
- background: url("../SVG/cloudy.svg");
- background-repeat: no-repeat;
-
+  background: url("../SVG/cloudy.svg");
+  background-repeat: no-repeat;
 }
 
 .Humidity {
- background: url("../SVG/humidity.svg");
- background-repeat: no-repeat;
+  background: url("../SVG/humidity.svg");
+  background-repeat: no-repeat;
 }
 
 .Lightning {
- background: url("../SVG/lightning.svg");
- background-repeat: no-repeat;
+  background: url("../SVG/lightning.svg");
+  background-repeat: no-repeat;
 }
 
 .Mist {
- background: url("../SVG/mist.svg");
- background-repeat: no-repeat;
+  background: url("../SVG/mist.svg");
+  background-repeat: no-repeat;
 }
 
 .Rain {
- background: url("../SVG/rainy.svg");
- background-repeat: no-repeat;
- fill: black;
+  background: url("../SVG/rainy.svg");
+  background-repeat: no-repeat;
+  fill: black;
 }
 
 .Snow {
- background: url("../SVG/snow.svg");
- background-repeat: no-repeat;
+  background: url("../SVG/snow.svg");
+  background-repeat: no-repeat;
 }
 
 .Sun {
- background: url("../SVG/sun.svg");
- background-repeat: no-repeat;
+  background: url("../SVG/sun.svg");
+  background-repeat: no-repeat;
 }
 .Clear {
- background: url("../SVG/sun.svg");
- background-repeat: no-repeat;
+  background: url("../SVG/sun.svg");
+  background-repeat: no-repeat;
 }
 
 .Wind {
- background: url("../SVG/wind.svg");
- background-repeat: no-repeat;
+  background: url("../SVG/wind.svg");
+  background-repeat: no-repeat;
 }
 .Smoke {
- background: url("../SVG/wind.svg");
- background-repeat: no-repeat;
+  background: url("../SVG/wind.svg");
+  background-repeat: no-repeat;
 }
