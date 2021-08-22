@@ -11,7 +11,6 @@ if (!value == "") {
     { mode: "cors" }
   );
   let data = await api.json();
-  console.log(data);
   let location = data.cod;
   if (location == 404) {
     const error = document.querySelector(".error-msg");
